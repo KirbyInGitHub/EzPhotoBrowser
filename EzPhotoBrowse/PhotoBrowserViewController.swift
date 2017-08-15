@@ -9,15 +9,21 @@
 import UIKit
 import SDWebImage
 
+public protocol PhotoBrowserViewControllerDelegate: NSObjectProtocol {
+    
+    func photoBrowserSourceRect(index: Int) -> CGRect
+}
+
 private let PhotoBrowserViewCell = "PhotoBrowserViewCell"
 
-/// 照片浏览器
 public class PhotoBrowserViewController: UIViewController {
 
     /// 照片 URL 数组
     fileprivate let urls: [URL]
-    /// 当前选中的照片索引
-    fileprivate let index: Int
+    /// 初始选中的照片索引
+    internal let index: Int
+    
+    public weak var delegate: PhotoBrowserViewControllerDelegate?
     
     @objc func close() {
         dismiss(animated: true, completion: nil)
@@ -97,26 +103,6 @@ public class PhotoBrowserViewController: UIViewController {
     }
 }
 
-
-extension PhotoBrowserViewController {
-    
-    public func imageViewForPresent(index: Int) -> UIImageView {
-        
-        let url = self.urls.objectAtIndex(index)
-        
-        let image = SDImageCache.shared().imageFromCache(forKey: url?.absoluteString)
-        
-        let iv = UIImageView()
-        
-        iv.contentMode = .scaleAspectFill
-        iv.clipsToBounds = true
-        
-        iv.image = image
-        
-        return iv
-    }
-}
-
 // MARK: - 设置 UI
 private extension PhotoBrowserViewController {
     
@@ -140,10 +126,11 @@ private extension PhotoBrowserViewController {
 
         collectionView.register(PhotoBrowserCell.self, forCellWithReuseIdentifier: PhotoBrowserViewCell)
         collectionView.dataSource = self
+        collectionView.delegate = self
     }
 }
 
-extension PhotoBrowserViewController: UICollectionViewDataSource {
+extension PhotoBrowserViewController: UICollectionViewDataSource, UICollectionViewDelegate, UIScrollViewDelegate {
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return urls.count
@@ -186,9 +173,55 @@ extension PhotoBrowserViewController: PhotoBrowserCellDelegate {
     }
 }
 
-extension PhotoBrowserViewController: PhotoBrowserDismissDelegate {
+extension PhotoBrowserViewController {
+    
+    internal func imageViewForPresent() -> UIImageView {
+        
+        guard let urlString = self.urls.objectAtIndex(index)?.absoluteString else {
+            return UIImageView()
+        }
+        
+        let image = SDImageCache.shared().imageFromCache(forKey: urlString)
+        
+        let iv = UIImageView()
+        
+        iv.contentMode = .scaleAspectFill
+        iv.clipsToBounds = true
+        
+        iv.image = image
+        
+        return iv
+    }
+    
+    internal func photoBrowserPresentToRect() -> CGRect {
+        
+        guard let urlString = self.urls.objectAtIndex(index)?.absoluteString, let image = SDImageCache.shared().imageFromCache(forKey: urlString) else {
+            return CGRect.zero
+        }
+        
+        let w = UIScreen.main.bounds.width
+        let h = image.size.height * w / image.size.width
+        
+        let screenHeight = UIScreen.main.bounds.height
+        var y: CGFloat = 0
+        if h < screenHeight {       // 图片短，垂直居中显示
+            y = (screenHeight - h) * 0.5
+        }
+        
+        let rect = CGRect(x: 0, y: y, width: w, height: h)
+        
+        return rect
+    }
+    
+    internal func photoBrowserSourceRect(index: Int) -> CGRect {
+        
+        return self.delegate?.photoBrowserSourceRect(index: index) ?? CGRect.zero
+    }
+}
 
-    public func imageViewForDismiss() -> UIImageView {
+extension PhotoBrowserViewController {
+
+    internal func imageViewForDismiss() -> UIImageView {
         
         guard let cell = collectionView.visibleCells.objectAtIndex(0) as? PhotoBrowserCell else {
             return UIImageView()
@@ -205,7 +238,7 @@ extension PhotoBrowserViewController: PhotoBrowserDismissDelegate {
         return iv
     }
     
-    public func indexForDismiss() -> Int {
+    internal func indexForDismiss() -> Int {
         return collectionView.indexPathsForVisibleItems.objectAtIndex(0)?.row ?? 0
     }
 }

@@ -8,44 +8,9 @@
 
 import UIKit
 
-public protocol PhotoBrowserPresentDelegate: NSObjectProtocol {
-    
-    /// 开始转场动画的图像
-    func imageViewForPresent(index: Int) -> UIImageView
-
-    /// 动画转场的起始位置
-    func photoBrowserPresentFromRect(index: Int) -> CGRect
-    
-    /// 动画转场的目标位置
-    func photoBrowserPresentToRect(index: Int) -> CGRect
-}
-
-public protocol PhotoBrowserDismissDelegate: NSObjectProtocol {
-    
-    /// 解除转场的图像视图（包含起始位置）
-    func imageViewForDismiss() -> UIImageView
-    /// 解除转场的图像索引
-    func indexForDismiss() -> Int
-}
-
 public class PhotoBrowserAnimator: NSObject {
 
-    private(set) public weak var presentDelegate: PhotoBrowserPresentDelegate?
-
-    private(set) public weak var dismissDelegate: PhotoBrowserDismissDelegate?
-
-    public var index: Int = 0
-
     fileprivate var isPresented = false
-
-    public func setDelegateParams(presentDelegate: PhotoBrowserPresentDelegate,
-                           index: Int,
-                           dismissDelegate: PhotoBrowserDismissDelegate) {
-        
-        self.presentDelegate = presentDelegate
-        self.dismissDelegate = dismissDelegate
-        self.index = index
-    }
 }
 
 extension PhotoBrowserAnimator: UIViewControllerTransitioningDelegate {
@@ -76,7 +41,7 @@ extension PhotoBrowserAnimator: UIViewControllerAnimatedTransitioning {
     
     fileprivate func presentAnimation(transitionContext: UIViewControllerContextTransitioning) {
 
-        guard let presentDelegate = self.presentDelegate else {
+        guard let toVC = transitionContext.viewController(forKey: .to) as? PhotoBrowserViewController else {
             return
         }
 
@@ -84,19 +49,18 @@ extension PhotoBrowserAnimator: UIViewControllerAnimatedTransitioning {
         toView.alpha = 0
         transitionContext.containerView.addSubview(toView)
 
-        let toVC = transitionContext.viewController(forKey: .to) as! PhotoBrowserViewController
         toVC.collectionView.isHidden = true
 
-        let iv = presentDelegate.imageViewForPresent(index: self.index)
+        let iv = toVC.imageViewForPresent()
 
-        iv.frame = presentDelegate.photoBrowserPresentFromRect(index: index)
+        iv.frame = toVC.photoBrowserSourceRect(index: toVC.index)
 
         transitionContext.containerView.addSubview(iv)
 
         UIView.animate(withDuration: transitionDuration(using: transitionContext),
                                    animations: { () -> Void in
                                     
-                                    iv.frame = presentDelegate.photoBrowserPresentToRect(index: self.index)
+                                    iv.frame = toVC.photoBrowserPresentToRect()
                                     toView.alpha = 1
                                     
         }) { (_) -> Void in
@@ -109,23 +73,23 @@ extension PhotoBrowserAnimator: UIViewControllerAnimatedTransitioning {
     
     private func dismissAnimation(transitionContext: UIViewControllerContextTransitioning) {
 
-        guard let presentDelegate = presentDelegate, let dismissDelegate = dismissDelegate else {
+        guard let fromVC = transitionContext.viewController(forKey: .from) as? PhotoBrowserViewController else {
                 return
         }
 
         let fromView = transitionContext.view(forKey: UITransitionContextViewKey.from)!
         fromView.removeFromSuperview()
 
-        let iv = dismissDelegate.imageViewForDismiss()
+        let iv = fromVC.imageViewForDismiss()
 
         transitionContext.containerView.addSubview(iv)
 
-        let index = dismissDelegate.indexForDismiss()
+        let index = fromVC.indexForDismiss()
         
         UIView.animate(withDuration: transitionDuration(using: transitionContext),
                                    animations: { () -> Void in
 
-                                    iv.frame = presentDelegate.photoBrowserPresentFromRect(index: index)
+                                    iv.frame = fromVC.photoBrowserSourceRect(index: index)
                                     
         }) { (_) -> Void in
 
