@@ -1,0 +1,6 @@
+framework module Pods_EzPhotoBrowse {
+  umbrella header "Pods-EzPhotoBrowse-umbrella.h"
+
+  export *
+  module * { export * }
+}
