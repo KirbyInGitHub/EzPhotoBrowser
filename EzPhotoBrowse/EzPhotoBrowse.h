@@ -2,7 +2,7 @@
 //  EzPhotoBrowse.h
 //  EzPhotoBrowse
 //
-//  Created by 张鹏 on 2017/8/15.
+//  Created by 张鹏 on 2017/8/16.
 //  Copyright © 2017年 大白菜. All rights reserved.
 //
 

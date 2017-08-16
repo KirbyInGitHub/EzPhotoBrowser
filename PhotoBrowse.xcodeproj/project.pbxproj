@@ -7,29 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A7173E78191910E931F925B /* Pods_EzPhotoBrowse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6076A111AB4838C1511DA33 /* Pods_EzPhotoBrowse.framework */; };
+		6C75D7B4D3E5634E9EB904EF /* Pods_EzPhotoBrowse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6076A111AB4838C1511DA33 /* Pods_EzPhotoBrowse.framework */; };
 		8B539DC81F08EF4F00D3B1A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B539DC71F08EF4F00D3B1A1 /* AppDelegate.swift */; };
 		8B539DCA1F08EF4F00D3B1A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B539DC91F08EF4F00D3B1A1 /* ViewController.swift */; };
 		8B539DCD1F08EF4F00D3B1A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B539DCB1F08EF4F00D3B1A1 /* Main.storyboard */; };
 		8B539DCF1F08EF4F00D3B1A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B539DCE1F08EF4F00D3B1A1 /* Assets.xcassets */; };
 		8B539DD21F08EF4F00D3B1A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B539DD01F08EF4F00D3B1A1 /* LaunchScreen.storyboard */; };
-		8B9CDE441F42D97900565812 /* EzPhotoBrowse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9CDE421F42D97900565812 /* EzPhotoBrowse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B9CDE471F42D97900565812 /* EzPhotoBrowse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9CDE401F42D97900565812 /* EzPhotoBrowse.framework */; };
-		8B9CDE481F42D97900565812 /* EzPhotoBrowse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9CDE401F42D97900565812 /* EzPhotoBrowse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8B9CDE551F42DAE500565812 /* PhotoBrowserAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CDE4F1F42D9CC00565812 /* PhotoBrowserAnimator.swift */; };
-		8B9CDE581F42DB2200565812 /* PhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CDE4E1F42D9CC00565812 /* PhotoBrowserCell.swift */; };
-		8B9CDE591F42DB2200565812 /* PhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CDE4D1F42D9CC00565812 /* PhotoBrowserViewController.swift */; };
-		8B9CDE5A1F42DB2200565812 /* ProgressImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9CDE501F42D9CC00565812 /* ProgressImageView.swift */; };
+		8B89909A1F443EB6004B578A /* EzPhotoBrowse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B8990981F443EB6004B578A /* EzPhotoBrowse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B89909D1F443EB6004B578A /* EzPhotoBrowse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8990961F443EB6004B578A /* EzPhotoBrowse.framework */; };
+		8B89909E1F443EB6004B578A /* EzPhotoBrowse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8990961F443EB6004B578A /* EzPhotoBrowse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B8990AE1F443EE9004B578A /* PhotoBrowserAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8990A51F443ED1004B578A /* PhotoBrowserAnimator.swift */; };
+		8B8990AF1F443EEC004B578A /* PhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8990A61F443ED1004B578A /* PhotoBrowserCell.swift */; };
+		8B8990B01F443EEE004B578A /* PhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8990A71F443ED1004B578A /* PhotoBrowserViewController.swift */; };
+		8B8990B11F443EEF004B578A /* ProgressImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8990A81F443ED1004B578A /* ProgressImageView.swift */; };
+		8B8990B21F443EF3004B578A /* save_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B8990AA1F443ED1004B578A /* save_icon.png */; };
+		8B8990B31F443EF7004B578A /* save_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B8990AB1F443ED1004B578A /* save_icon@2x.png */; };
+		8B8990B41F443EF7004B578A /* save_icon_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B8990AC1F443ED1004B578A /* save_icon_highlighted.png */; };
+		8B8990B51F443EF7004B578A /* save_icon_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B8990AD1F443ED1004B578A /* save_icon_highlighted@2x.png */; };
 		8BBC86B91F3B2832006E99D9 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC86B81F3B2832006E99D9 /* CollectionViewController.swift */; };
 		A2D5D241367C03FD3FE58D11 /* Pods_All_PhotoBrowse_PhotoBrowse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F8CAB9D9EB1E73F534FF10 /* Pods_All_PhotoBrowse_PhotoBrowse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8B9CDE451F42D97900565812 /* PBXContainerItemProxy */ = {
+		8B89909B1F443EB6004B578A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8B539DBC1F08EF4F00D3B1A1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8B9CDE3F1F42D97900565812;
+			remoteGlobalIDString = 8B8990951F443EB6004B578A;
 			remoteInfo = EzPhotoBrowse;
 		};
 /* End PBXContainerItemProxy section */
@@ -41,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8B9CDE481F42D97900565812 /* EzPhotoBrowse.framework in Embed Frameworks */,
+				8B89909E1F443EB6004B578A /* EzPhotoBrowse.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,13 +62,17 @@
 		8B539DCE1F08EF4F00D3B1A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B539DD11F08EF4F00D3B1A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B539DD31F08EF4F00D3B1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B9CDE401F42D97900565812 /* EzPhotoBrowse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EzPhotoBrowse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B9CDE421F42D97900565812 /* EzPhotoBrowse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EzPhotoBrowse.h; sourceTree = "<group>"; };
-		8B9CDE431F42D97900565812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B9CDE4D1F42D9CC00565812 /* PhotoBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserViewController.swift; sourceTree = "<group>"; };
-		8B9CDE4E1F42D9CC00565812 /* PhotoBrowserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCell.swift; sourceTree = "<group>"; };
-		8B9CDE4F1F42D9CC00565812 /* PhotoBrowserAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserAnimator.swift; sourceTree = "<group>"; };
-		8B9CDE501F42D9CC00565812 /* ProgressImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressImageView.swift; sourceTree = "<group>"; };
+		8B8990961F443EB6004B578A /* EzPhotoBrowse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EzPhotoBrowse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8990981F443EB6004B578A /* EzPhotoBrowse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EzPhotoBrowse.h; sourceTree = "<group>"; };
+		8B8990991F443EB6004B578A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B8990A51F443ED1004B578A /* PhotoBrowserAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserAnimator.swift; sourceTree = "<group>"; };
+		8B8990A61F443ED1004B578A /* PhotoBrowserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCell.swift; sourceTree = "<group>"; };
+		8B8990A71F443ED1004B578A /* PhotoBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserViewController.swift; sourceTree = "<group>"; };
+		8B8990A81F443ED1004B578A /* ProgressImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressImageView.swift; sourceTree = "<group>"; };
+		8B8990AA1F443ED1004B578A /* save_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save_icon.png; sourceTree = "<group>"; };
+		8B8990AB1F443ED1004B578A /* save_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save_icon@2x.png"; sourceTree = "<group>"; };
+		8B8990AC1F443ED1004B578A /* save_icon_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save_icon_highlighted.png; sourceTree = "<group>"; };
+		8B8990AD1F443ED1004B578A /* save_icon_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "save_icon_highlighted@2x.png"; sourceTree = "<group>"; };
 		8BBC86B81F3B2832006E99D9 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		8DB23D763F9D3FEB3FD71F8D /* Pods-All PhotoBrowse-PhotoBrowse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All PhotoBrowse-PhotoBrowse.release.xcconfig"; path = "Pods/Target Support Files/Pods-All PhotoBrowse-PhotoBrowse/Pods-All PhotoBrowse-PhotoBrowse.release.xcconfig"; sourceTree = "<group>"; };
 		B6076A111AB4838C1511DA33 /* Pods_EzPhotoBrowse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EzPhotoBrowse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,16 +85,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B9CDE471F42D97900565812 /* EzPhotoBrowse.framework in Frameworks */,
+				8B89909D1F443EB6004B578A /* EzPhotoBrowse.framework in Frameworks */,
 				A2D5D241367C03FD3FE58D11 /* Pods_All_PhotoBrowse_PhotoBrowse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B9CDE3C1F42D97900565812 /* Frameworks */ = {
+		8B8990921F443EB6004B578A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A7173E78191910E931F925B /* Pods_EzPhotoBrowse.framework in Frameworks */,
+				6C75D7B4D3E5634E9EB904EF /* Pods_EzPhotoBrowse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				8B539DC61F08EF4F00D3B1A1 /* PhotoBrowse */,
-				8B9CDE411F42D97900565812 /* EzPhotoBrowse */,
+				8B8990971F443EB6004B578A /* EzPhotoBrowse */,
 				8B539DC51F08EF4F00D3B1A1 /* Products */,
 				3CB4BE88B0CDDB5DCCCA1B88 /* Pods */,
 				A624C357B3F0C9D349F97EF1 /* Frameworks */,
@@ -119,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				8B539DC41F08EF4F00D3B1A1 /* PhotoBrowse.app */,
-				8B9CDE401F42D97900565812 /* EzPhotoBrowse.framework */,
+				8B8990961F443EB6004B578A /* EzPhotoBrowse.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,17 +146,37 @@
 			path = PhotoBrowse;
 			sourceTree = "<group>";
 		};
-		8B9CDE411F42D97900565812 /* EzPhotoBrowse */ = {
+		8B8990971F443EB6004B578A /* EzPhotoBrowse */ = {
 			isa = PBXGroup;
 			children = (
-				8B9CDE421F42D97900565812 /* EzPhotoBrowse.h */,
-				8B9CDE4F1F42D9CC00565812 /* PhotoBrowserAnimator.swift */,
-				8B9CDE4E1F42D9CC00565812 /* PhotoBrowserCell.swift */,
-				8B9CDE4D1F42D9CC00565812 /* PhotoBrowserViewController.swift */,
-				8B9CDE501F42D9CC00565812 /* ProgressImageView.swift */,
-				8B9CDE431F42D97900565812 /* Info.plist */,
+				8B8990A91F443ED1004B578A /* Assets */,
+				8B8990A21F443ED1004B578A /* Classes */,
+				8B8990981F443EB6004B578A /* EzPhotoBrowse.h */,
+				8B8990991F443EB6004B578A /* Info.plist */,
 			);
 			path = EzPhotoBrowse;
+			sourceTree = "<group>";
+		};
+		8B8990A21F443ED1004B578A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8B8990A51F443ED1004B578A /* PhotoBrowserAnimator.swift */,
+				8B8990A61F443ED1004B578A /* PhotoBrowserCell.swift */,
+				8B8990A71F443ED1004B578A /* PhotoBrowserViewController.swift */,
+				8B8990A81F443ED1004B578A /* ProgressImageView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8B8990A91F443ED1004B578A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8B8990AA1F443ED1004B578A /* save_icon.png */,
+				8B8990AB1F443ED1004B578A /* save_icon@2x.png */,
+				8B8990AC1F443ED1004B578A /* save_icon_highlighted.png */,
+				8B8990AD1F443ED1004B578A /* save_icon_highlighted@2x.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		A624C357B3F0C9D349F97EF1 /* Frameworks */ = {
@@ -163,11 +191,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8B9CDE3D1F42D97900565812 /* Headers */ = {
+		8B8990931F443EB6004B578A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B9CDE441F42D97900565812 /* EzPhotoBrowse.h in Headers */,
+				8B89909A1F443EB6004B578A /* EzPhotoBrowse.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,23 +217,23 @@
 			buildRules = (
 			);
 			dependencies = (
-				8B9CDE461F42D97900565812 /* PBXTargetDependency */,
+				8B89909C1F443EB6004B578A /* PBXTargetDependency */,
 			);
 			name = PhotoBrowse;
 			productName = PhotoBrowse;
 			productReference = 8B539DC41F08EF4F00D3B1A1 /* PhotoBrowse.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8B9CDE3F1F42D97900565812 /* EzPhotoBrowse */ = {
+		8B8990951F443EB6004B578A /* EzPhotoBrowse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B9CDE491F42D97900565812 /* Build configuration list for PBXNativeTarget "EzPhotoBrowse" */;
+			buildConfigurationList = 8B89909F1F443EB6004B578A /* Build configuration list for PBXNativeTarget "EzPhotoBrowse" */;
 			buildPhases = (
-				2C8B096387AC4B1EFB5B8A14 /* [CP] Check Pods Manifest.lock */,
-				8B9CDE3B1F42D97900565812 /* Sources */,
-				8B9CDE3C1F42D97900565812 /* Frameworks */,
-				8B9CDE3D1F42D97900565812 /* Headers */,
-				8B9CDE3E1F42D97900565812 /* Resources */,
-				956D7E34BCF241A438AFC353 /* [CP] Copy Pods Resources */,
+				5136EB41A92158C66A02991F /* [CP] Check Pods Manifest.lock */,
+				8B8990911F443EB6004B578A /* Sources */,
+				8B8990921F443EB6004B578A /* Frameworks */,
+				8B8990931F443EB6004B578A /* Headers */,
+				8B8990941F443EB6004B578A /* Resources */,
+				57AE87C1BDEE59B0EB063629 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,7 +241,7 @@
 			);
 			name = EzPhotoBrowse;
 			productName = EzPhotoBrowse;
-			productReference = 8B9CDE401F42D97900565812 /* EzPhotoBrowse.framework */;
+			productReference = 8B8990961F443EB6004B578A /* EzPhotoBrowse.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -231,10 +259,9 @@
 						DevelopmentTeam = 7SU956949Y;
 						ProvisioningStyle = Automatic;
 					};
-					8B9CDE3F1F42D97900565812 = {
+					8B8990951F443EB6004B578A = {
 						CreatedOnToolsVersion = 9.0;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 7SU956949Y;
 					};
 				};
 			};
@@ -252,7 +279,7 @@
 			projectRoot = "";
 			targets = (
 				8B539DC31F08EF4F00D3B1A1 /* PhotoBrowse */,
-				8B9CDE3F1F42D97900565812 /* EzPhotoBrowse */,
+				8B8990951F443EB6004B578A /* EzPhotoBrowse */,
 			);
 		};
 /* End PBXProject section */
@@ -268,10 +295,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B9CDE3E1F42D97900565812 /* Resources */ = {
+		8B8990941F443EB6004B578A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8990B51F443EF7004B578A /* save_icon_highlighted@2x.png in Resources */,
+				8B8990B41F443EF7004B578A /* save_icon_highlighted.png in Resources */,
+				8B8990B31F443EF7004B578A /* save_icon@2x.png in Resources */,
+				8B8990B21F443EF3004B578A /* save_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,21 +324,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-All PhotoBrowse-PhotoBrowse/Pods-All PhotoBrowse-PhotoBrowse-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2C8B096387AC4B1EFB5B8A14 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		4FEC19C3697A9CF754CA7363 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,7 +339,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-All PhotoBrowse-PhotoBrowse/Pods-All PhotoBrowse-PhotoBrowse-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		956D7E34BCF241A438AFC353 /* [CP] Copy Pods Resources */ = {
+		5136EB41A92158C66A02991F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		57AE87C1BDEE59B0EB063629 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -366,24 +397,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B9CDE3B1F42D97900565812 /* Sources */ = {
+		8B8990911F443EB6004B578A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B9CDE581F42DB2200565812 /* PhotoBrowserCell.swift in Sources */,
-				8B9CDE591F42DB2200565812 /* PhotoBrowserViewController.swift in Sources */,
-				8B9CDE5A1F42DB2200565812 /* ProgressImageView.swift in Sources */,
-				8B9CDE551F42DAE500565812 /* PhotoBrowserAnimator.swift in Sources */,
+				8B8990B01F443EEE004B578A /* PhotoBrowserViewController.swift in Sources */,
+				8B8990B11F443EEF004B578A /* ProgressImageView.swift in Sources */,
+				8B8990AE1F443EE9004B578A /* PhotoBrowserAnimator.swift in Sources */,
+				8B8990AF1F443EEC004B578A /* PhotoBrowserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8B9CDE461F42D97900565812 /* PBXTargetDependency */ = {
+		8B89909C1F443EB6004B578A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8B9CDE3F1F42D97900565812 /* EzPhotoBrowse */;
-			targetProxy = 8B9CDE451F42D97900565812 /* PBXContainerItemProxy */;
+			target = 8B8990951F443EB6004B578A /* EzPhotoBrowse */;
+			targetProxy = 8B89909B1F443EB6004B578A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -546,19 +577,16 @@
 			};
 			name = Release;
 		};
-		8B9CDE4A1F42D97900565812 /* Debug */ = {
+		8B8990A01F443EB6004B578A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F794902C1FAFE93AC9416B2F /* Pods-EzPhotoBrowse.debug.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7SU956949Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -569,29 +597,24 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SmallCobblerStudio.EzPhotoBrowse;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8B9CDE4B1F42D97900565812 /* Release */ = {
+		8B8990A11F443EB6004B578A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 541355C86248D6FC036304C5 /* Pods-EzPhotoBrowse.release.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7SU956949Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -602,9 +625,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SmallCobblerStudio.EzPhotoBrowse;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -632,11 +654,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B9CDE491F42D97900565812 /* Build configuration list for PBXNativeTarget "EzPhotoBrowse" */ = {
+		8B89909F1F443EB6004B578A /* Build configuration list for PBXNativeTarget "EzPhotoBrowse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B9CDE4A1F42D97900565812 /* Debug */,
-				8B9CDE4B1F42D97900565812 /* Release */,
+				8B8990A01F443EB6004B578A /* Debug */,
+				8B8990A11F443EB6004B578A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
