@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_All_PhotoBrowse_PhotoBrowseVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_All_PhotoBrowse_PhotoBrowseVersionString[];
+FOUNDATION_EXPORT double EzPhotoBrowserVersionNumber;
+FOUNDATION_EXPORT const unsigned char EzPhotoBrowserVersionString[];
 

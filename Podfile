@@ -4,22 +4,13 @@ platform:ios,'8.0'
 use_frameworks!
 inhibit_all_warnings!
 
-abstract_target 'All PhotoBrowse' do
+abstract_target 'All PhotoBrowser' do
     
-    project "PhotoBrowse"
-    pod 'SDWebImage'
-    pod 'SVProgressHUD'
+    project "PhotoBrowser"
+    pod 'EzPhotoBrowser', :path => "./"
 
-
-    target 'PhotoBrowse' do
+    target 'PhotoBrowser' do
     end
 
 end
 
-project "PhotoBrowse"
-target 'EzPhotoBrowse' do
-    
-    pod 'SDWebImage'
-
-    
-end

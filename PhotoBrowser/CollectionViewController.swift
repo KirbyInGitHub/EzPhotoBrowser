@@ -8,7 +8,7 @@
 
 import UIKit
 import SDWebImage
-import EzPhotoBrowse
+import EzPhotoBrowser
 
 class CollectionViewController: UICollectionViewController {
     
