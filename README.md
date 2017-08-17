@@ -1,6 +1,6 @@
-# EzPhotoBrowse
+# EzPhotoBrowser
 
-![image](https://github.com/570262616/EzPhotoBrowse/blob/master/Untitled.gif)
+![image](https://github.com/570262616/EzPhotoBrowser/blob/master/Untitled.gif)
 
 ## Features
 * Lightweight image browser
@@ -18,7 +18,7 @@
 ## Installation
 ### CocoaPods
 ```ruby
-pod 'EzPhotoBrowse'
+pod 'EzPhotoBrowser'
 ```
 
 ## Usage
