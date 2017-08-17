@@ -11,7 +11,7 @@ import SDWebImage
 
 public protocol PhotoBrowserViewControllerDelegate: NSObjectProtocol {
     
-    func photoBrowserSourceRect(index: Int) -> CGRect
+    func photoBrowser(vc: PhotoBrowserViewController, didShowPhotoAt index: Int)
 }
 
 private let PhotoBrowserViewCell = "PhotoBrowserViewCell"
@@ -21,7 +21,9 @@ public class PhotoBrowserViewController: UIViewController {
     /// 照片 URL 数组
     fileprivate let urls: [URL]
     /// 初始选中的照片索引
-    internal let index: Int
+    internal var index: Int
+    
+    public var sourceView: UIView?
     
     public weak var delegate: PhotoBrowserViewControllerDelegate?
     
@@ -145,8 +147,26 @@ extension PhotoBrowserViewController: UICollectionViewDataSource, UICollectionVi
         
         cell.imageURL = urls.objectAtIndex(indexPath.row)
         cell.photoDelegate = self
-        
         return cell
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        let index = collectionView.indexPathsForVisibleItems.first?.row ?? 0
+        
+        self.index = index
+        
+        delegate?.photoBrowser(vc: self, didShowPhotoAt: self.index)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        
+    }
+    
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+        print(collectionView.visibleCells)
     }
 }
 
@@ -216,10 +236,18 @@ extension PhotoBrowserViewController {
         return rect
     }
     
-    internal func photoBrowserSourceRect(index: Int) -> CGRect {
+    internal func photoBrowserSourceRect() -> CGRect {
         
-        return self.delegate?.photoBrowserSourceRect(index: index) ?? CGRect.zero
+        guard let sourceView = self.sourceView, let window = UIApplication.shared.keyWindow else {
+            return CGRect.zero
+        }
+        return  self.view.convert(sourceView.frame, to: window)
     }
+    
+//    internal func photoBrowserSourceRect(index: Int) -> CGRect {
+//        
+//        return self.delegate?.photoBrowserSourceRect(index: index) ?? CGRect.zero
+//    }
 }
 
 extension PhotoBrowserViewController {

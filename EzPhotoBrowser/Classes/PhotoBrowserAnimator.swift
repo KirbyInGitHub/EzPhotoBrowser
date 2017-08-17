@@ -53,7 +53,7 @@ extension PhotoBrowserAnimator: UIViewControllerAnimatedTransitioning {
 
         let iv = toVC.imageViewForPresent()
 
-        iv.frame = toVC.photoBrowserSourceRect(index: toVC.index)
+        iv.frame = toVC.photoBrowserSourceRect()
 
         transitionContext.containerView.addSubview(iv)
 
@@ -89,7 +89,7 @@ extension PhotoBrowserAnimator: UIViewControllerAnimatedTransitioning {
         UIView.animate(withDuration: transitionDuration(using: transitionContext),
                                    animations: { () -> Void in
 
-                                    iv.frame = fromVC.photoBrowserSourceRect(index: index)
+                                    iv.frame = fromVC.photoBrowserSourceRect()
                                     
         }) { (_) -> Void in
 
