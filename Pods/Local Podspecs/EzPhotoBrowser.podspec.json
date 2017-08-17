@@ -1,6 +1,6 @@
 {
   "name": "EzPhotoBrowser",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "summary": "Lightweight image browser",
   "homepage": "https://github.com/570262616/EzPhotoBrowser",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/570262616/EzPhotoBrowser.git",
-    "tag": "0.0.3"
+    "tag": "0.0.5"
   },
   "platforms": {
     "ios": "8.0"

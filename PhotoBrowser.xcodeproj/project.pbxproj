@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19CA47237BE7F6D370446D7B /* Pods_PhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D558090909BBB81D549A94 /* Pods_PhotoBrowser.framework */; };
 		8B539DC81F08EF4F00D3B1A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B539DC71F08EF4F00D3B1A1 /* AppDelegate.swift */; };
 		8B539DCA1F08EF4F00D3B1A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B539DC91F08EF4F00D3B1A1 /* ViewController.swift */; };
 		8B539DCD1F08EF4F00D3B1A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B539DCB1F08EF4F00D3B1A1 /* Main.storyboard */; };
 		8B539DCF1F08EF4F00D3B1A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B539DCE1F08EF4F00D3B1A1 /* Assets.xcassets */; };
 		8B539DD21F08EF4F00D3B1A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B539DD01F08EF4F00D3B1A1 /* LaunchScreen.storyboard */; };
 		8BBC86B91F3B2832006E99D9 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC86B81F3B2832006E99D9 /* CollectionViewController.swift */; };
-		973CDFF51352F42F634B5E0E /* Pods_All_PhotoBrowser_PhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED6716E1714137944BBFCF2 /* Pods_All_PhotoBrowser_PhotoBrowser.framework */; };
-		A2D5D241367C03FD3FE58D11 /* Pods_All_PhotoBrowse_PhotoBrowse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F8CAB9D9EB1E73F534FF10 /* Pods_All_PhotoBrowse_PhotoBrowse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,7 +32,6 @@
 		18B3F5CF567DEEA3138E652A /* Pods-PhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoBrowser/Pods-PhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		38DD3400835FF885BB53FDF8 /* Pods-All PhotoBrowser-PhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All PhotoBrowser-PhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-All PhotoBrowser-PhotoBrowser/Pods-All PhotoBrowser-PhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		541355C86248D6FC036304C5 /* Pods-EzPhotoBrowse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzPhotoBrowse.release.xcconfig"; path = "Pods/Target Support Files/Pods-EzPhotoBrowse/Pods-EzPhotoBrowse.release.xcconfig"; sourceTree = "<group>"; };
-		56F8CAB9D9EB1E73F534FF10 /* Pods_All_PhotoBrowse_PhotoBrowse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_All_PhotoBrowse_PhotoBrowse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60B4ECB9942A46259E5B42C4 /* Pods-All PhotoBrowser-PhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All PhotoBrowser-PhotoBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-All PhotoBrowser-PhotoBrowser/Pods-All PhotoBrowser-PhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		8B539DC41F08EF4F00D3B1A1 /* PhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B539DC71F08EF4F00D3B1A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,12 +46,9 @@
 		8BEBB7751F45852900A4E309 /* Untitled.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Untitled.gif; sourceTree = "<group>"; };
 		8BEBB7761F458AE400A4E309 /* EzPhotoBrowser.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = EzPhotoBrowser.podspec; sourceTree = "<group>"; };
 		8DB23D763F9D3FEB3FD71F8D /* Pods-All PhotoBrowse-PhotoBrowse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All PhotoBrowse-PhotoBrowse.release.xcconfig"; path = "Pods/Target Support Files/Pods-All PhotoBrowse-PhotoBrowse/Pods-All PhotoBrowse-PhotoBrowse.release.xcconfig"; sourceTree = "<group>"; };
-		93D558090909BBB81D549A94 /* Pods_PhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6076A111AB4838C1511DA33 /* Pods_EzPhotoBrowse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EzPhotoBrowse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E888B96B8115FA618CD3457A /* Pods-PhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoBrowser/Pods-PhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		F024320D05A846BF8E76C986 /* Pods-All PhotoBrowse-PhotoBrowse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All PhotoBrowse-PhotoBrowse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-All PhotoBrowse-PhotoBrowse/Pods-All PhotoBrowse-PhotoBrowse.debug.xcconfig"; sourceTree = "<group>"; };
 		F794902C1FAFE93AC9416B2F /* Pods-EzPhotoBrowse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EzPhotoBrowse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EzPhotoBrowse/Pods-EzPhotoBrowse.debug.xcconfig"; sourceTree = "<group>"; };
-		FED6716E1714137944BBFCF2 /* Pods_All_PhotoBrowser_PhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_All_PhotoBrowser_PhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2D5D241367C03FD3FE58D11 /* Pods_All_PhotoBrowse_PhotoBrowse.framework in Frameworks */,
-				973CDFF51352F42F634B5E0E /* Pods_All_PhotoBrowser_PhotoBrowser.framework in Frameworks */,
-				19CA47237BE7F6D370446D7B /* Pods_PhotoBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,10 +116,6 @@
 		A624C357B3F0C9D349F97EF1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				56F8CAB9D9EB1E73F534FF10 /* Pods_All_PhotoBrowse_PhotoBrowse.framework */,
-				B6076A111AB4838C1511DA33 /* Pods_EzPhotoBrowse.framework */,
-				FED6716E1714137944BBFCF2 /* Pods_All_PhotoBrowser_PhotoBrowser.framework */,
-				93D558090909BBB81D549A94 /* Pods_PhotoBrowser.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

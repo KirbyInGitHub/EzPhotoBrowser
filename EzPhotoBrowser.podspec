@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EzPhotoBrowser'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = 'Lightweight image browser'
   s.homepage         = 'https://github.com/570262616/EzPhotoBrowser'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

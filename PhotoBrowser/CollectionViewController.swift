@@ -65,14 +65,19 @@ class CollectionViewController: UICollectionViewController {
 }
 
 extension CollectionViewController: PhotoBrowserViewControllerDelegate {
-    
-    func photoBrowserSourceRect(index: Int) -> CGRect {
-        
-        let indexPath = IndexPath(row: index, section: 0)
-        
-        let cell = collectionView?.cellForItem(at: indexPath)
-        
-        return self.collectionView!.convert(cell!.frame, to: UIApplication.shared.keyWindow!)
-    }
 
+//    func photoBrowserSourceRect(index: Int) -> CGRect {
+//
+//        let indexPath = IndexPath(row: index, section: 0)
+//
+//        let cell = collectionView?.cellForItem(at: indexPath)
+//
+//        return self.collectionView!.convert(cell!.frame, to: UIApplication.shared.keyWindow!)
+//    }
+    
+    func photoBrowser(vc: PhotoBrowserViewController, didShowPhotoAt index: Int) {
+        
+        print(index)
+    }
+    
 }

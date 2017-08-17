@@ -158,16 +158,6 @@ extension PhotoBrowserViewController: UICollectionViewDataSource, UICollectionVi
         
         delegate?.photoBrowser(vc: self, didShowPhotoAt: self.index)
     }
-    
-    public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        
-        
-    }
-    
-    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        
-        print(collectionView.visibleCells)
-    }
 }
 
 extension PhotoBrowserViewController: PhotoBrowserCellDelegate {
