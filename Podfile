@@ -4,13 +4,6 @@ platform:ios,'8.0'
 use_frameworks!
 inhibit_all_warnings!
 
-abstract_target 'All PhotoBrowser' do
-    
-    project "PhotoBrowser"
-    pod 'EzPhotoBrowser', :path => "./"
-
-    target 'PhotoBrowser' do
-    end
-
+target 'PhotoBrowser' do
+    pod "EzPhotoBrowser", :path => "./"
 end
-

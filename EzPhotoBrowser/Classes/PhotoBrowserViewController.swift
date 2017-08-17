@@ -78,16 +78,12 @@ public class PhotoBrowserViewController: UIViewController {
     fileprivate lazy var saveButton: UIButton = {
         let button = UIButton(type: .system)
         
-        let bundle = Bundle.main
-        
+        let bundle = Bundle(for: PhotoBrowserViewController.self)
+
         if let path = bundle.path(forResource: "EzPhotoBrowser.bundle/save_icon", ofType: "png") {
             let image = UIImage(contentsOfFile: path)
             button.setImage(image, for: .normal)
         }
-//        button.setTitle("Save", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        button.backgroundColor = UIColor.darkGray
         
         return button
     }()
